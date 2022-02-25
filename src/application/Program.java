@@ -16,14 +16,10 @@ public class Program {
 	//Com tipos curinga podemos fazer métodos que recebem um genérico de "qualquer tipo"
 	
 	public static void printList(List<?> list) {
-	
-	//Porém não é possível adicionar dados a uma coleção de tipo curinga 
+		//Porém não é possível adicionar dados a uma coleção de tipo curinga 
 		list.add(3);
 		for (Object obj : list) {
 			System.out.println(obj);
-			
-
-
 		}
 	}
 }
